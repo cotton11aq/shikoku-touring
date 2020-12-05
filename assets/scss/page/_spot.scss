@@ -1,0 +1,529 @@
+.spot {
+  padding: 4rem 2rem 0;
+  background: #f7f7f7;
+
+  &-dropdown {
+    padding: 2rem 4rem 4rem;
+    border-right: 1px solid #000;
+  }
+
+  &-flexpc {
+    display: none;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+  }
+
+  &-num {
+    font-size: 2rem;
+    padding-right: 2rem;
+    letter-spacing: 0;
+    font-family: "Damion", cursive;
+    color: #278ee1;
+
+    span {
+      font-size: 3.2rem;
+      font-weight: bold;
+      font-family: "Roboto Condensed", sans-serif;
+      font-style: italic;
+    }
+  }
+
+  &-region {
+    font-size: 2.6rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    border-left: 2px solid #000;
+  }
+
+  &-text {
+    margin-top: 2rem;
+    padding-right: 4rem;
+    letter-spacing: 0;
+  }
+
+  &-container {
+    border-right: 1px solid #000;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    padding-top: 2rem;
+  }
+
+  &-containerpc {
+    display: none;
+  }
+
+  &-border {
+    width: 100%;
+    padding: 0 0 0 15%;
+  }
+
+  &-borderchild {
+    width: 100%;
+    height: 2rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid #000;
+  }
+
+  &-img {
+    width: 100%;
+    height: 2rem;
+  }
+
+  &-clear {
+    position: absolute;
+    z-index: 2;
+    right: -1px;
+    height: auto;
+    width: 100%;
+    border-right: 1px solid #000;
+  }
+
+  &-img {
+    position: relative;
+    z-index: -100;
+    right: -2.1rem;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &-content {
+    padding: 2rem 4rem 2rem;
+    border: 1px solid #000;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  &-droptext {
+    p {
+      font-size: 1.4rem;
+      letter-spacing: 0;
+    }
+  }
+
+  &-address {
+    margin-top: 4rem;
+    display: flex;
+  }
+
+  &-addresspin {
+    padding-top: 0.3rem;
+  }
+
+  &-addresstext {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+
+  &-map {
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+  }
+
+  &-map::before {
+    content: "";
+    display: block;
+    padding-top: (18 / 24) * 100%; //縦横比
+  }
+
+  &-gmap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-link {
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+  &-share {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+
+  &-sharebtn {
+    text-align: center;
+    margin-top: 1rem;
+
+    a {
+      display: inline-block;
+      line-height: 5.5rem;
+      border-radius: 5rem;
+    }
+  }
+
+  &-link {
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+
+  /* ボタン全体 */
+  &-flowbtn12 {
+    font-family: "Verdana", sans-serif;
+    display: inline-block;
+    width: 14rem;
+    font-size: 20px;
+    transition: 0.4s;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* ボタン内テキストマウスホバー時 */
+  &-flowbtn12:hover {
+    color: #fff !important;
+    text-decoration: none;
+  }
+  /* Twitter */
+  &-flowbtn12.fl_tw2 {
+    border: solid 1px #55acee;
+    color: #55acee;
+    background: #fff;
+  }
+  /* Twitterマウスホバー時 */
+  &-flowbtn12.fl_tw2:hover {
+    border: solid 1px #55acee;
+    background: #55acee;
+  }
+
+  /* ボタン内テキスト調整 */
+  &-flowbtn12 span {
+    font-size: 1.4rem;
+    position: relative;
+    left: 0.8rem;
+    bottom: 0.2rem;
+  }
+
+  &-icons {
+    margin: 4rem 0 0;
+    position: relative;
+  }
+
+  &-bar {
+    width: 50%;
+    height: 2rem;
+    border-right: 1px solid black;
+  }
+
+  &-icon {
+    text-align: center;
+    img {
+      width: 15%;
+      max-width: 6rem;
+    }
+  }
+
+  &-time {
+    position: absolute;
+    top: 38%;
+    left: 60%;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    span {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  &-borderchild02 {
+    border-bottom: none;
+  }
+
+  &-sub {
+    display: none;
+  }
+
+  &-days {
+    background: #f7f7f7;
+    padding-top: 2rem;
+  }
+
+  &-day {
+    text-align: center;
+
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+
+    a {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+  }
+
+  // 詳しく見るボタン
+  &-btn-more,
+  &-btn-more03,
+  &-btn-more05,
+  &-btn-more07 {
+    @include button-sp01(#fff);
+  }
+
+  &-btn-more::before,
+  &-btn-more03::before,
+  &-btn-more05::before,
+  &-btn-more07::before {
+    content: "詳しく見る";
+    font-size: 1.4rem;
+    font-family: YuGothic, ’Yu Gothic’, ’ヒラギノ角ゴシック’, ’Hiragino Sans’,
+      sans-serif;
+  }
+
+  &-btn-more.close::before,
+  &-btn-more03.close::before,
+  &-btn-more05.close::before,
+  &-btn-more07.close::before {
+    content: "閉じる";
+    font-size: 1.4rem;
+    font-family: YuGothic, ’Yu Gothic’, ’ヒラギノ角ゴシック’, ’Hiragino Sans’,
+      sans-serif;
+  }
+}
+
+// 詳しく見るボタン//
+
+@include mq("sp") {
+  .spot {
+    padding-bottom: 0;
+    overflow: hidden;
+
+    &-flexsp {
+      display: none !important;
+    }
+
+    &-flexpc {
+      display: flex !important;
+    }
+
+    &-fade {
+      width: 112rem;
+      margin: 0 auto;
+      display: flex;
+      padding-right: 12rem;
+    }
+
+    &-flex01 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 40%;
+      padding: 6rem 0 4rem;
+    }
+
+    &-flex02 {
+      width: 60%;
+    }
+
+    &-containersp {
+      display: none;
+    }
+
+    &-containerpc {
+      display: block;
+    }
+
+    &-regions {
+      width: 28rem;
+      padding-left: 2rem;
+      padding-top: 1rem;
+    }
+
+    &-region {
+      padding-left: 0;
+      font-size: 3rem;
+      border-left: none;
+    }
+
+    &-regionsub {
+      margin-top: 0.5rem;
+    }
+
+    &-num {
+      display: flex;
+      align-items: center;
+      height: 29rem;
+      border-right: 1px solid #000;
+      font-size: 3rem;
+
+      span {
+        font-size: 5.6rem;
+        padding-left: 1rem;
+      }
+    }
+
+    &-title {
+      align-items: normal;
+    }
+
+    &-imgbtm {
+      height: 2rem;
+      width: 20rem;
+      border-top: 1px solid #000;
+      margin: 0 auto;
+    }
+
+    &-borderchild02 {
+      border-top: 1px solid #000;
+      border-bottom: none;
+    }
+
+    &-icons {
+      width: 100rem;
+      margin: 4rem auto;
+    }
+
+    &-time {
+      left: 54%;
+      font-size: 3.2rem;
+
+      span {
+        font-size: 1.6rem;
+      }
+    }
+
+    // 詳しくみるボタン
+    .spot-btn-more,
+    .spot-btn-more03,
+    .spot-btn-more05,
+    .spot-btn-more07 {
+      @include button-pc(16rem, #f7f7f7);
+    }
+
+    .spot-btn-more:hover,
+    .spot-btn-more03:hover,
+    .spot-btn-more05:hover,
+    .spot-btn-more07:hover {
+      opacity: 0.5;
+    }
+
+    &-dropdown {
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 8rem;
+    }
+
+    &-maps {
+      order: 1;
+      width: 24rem;
+      margin: 0 0 0 auto;
+    }
+
+    &-map {
+      width: 24rem;
+      height: 24rem;
+    }
+
+    &-text {
+      padding-right: 0;
+      font-size: 1.6rem;
+    }
+
+    &-link {
+      order: 2;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    &-droptexts {
+      order: 3;
+      width: 24rem;
+      padding: 2rem;
+      padding-right: 0;
+      margin: 0 0 0 auto;
+    }
+
+    &-address {
+      order: 4;
+      width: 100%;
+    }
+
+    &-shares {
+      order: 5;
+      width: 100%;
+      padding-left: 20rem;
+      padding-top: 4rem;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &-addresstext {
+      font-weight: normal;
+    }
+
+    &-btnsub {
+      border: none !important;
+      margin-top: 0 !important;
+      margin: 0 0 0 auto;
+      text-align: right !important;
+      width: 2rem !important;
+      padding-right: 4rem !important;
+
+      i {
+        display: inline-block;
+      }
+    }
+
+    &-btnsub::before {
+      font-family: "FontAwesome";
+      font-size: 0;
+    }
+
+    &-btnsub.close::before {
+      font-family: "FontAwesome";
+      margin-right: 0;
+      font-size: 0;
+      line-height: 0;
+    }
+
+    &-trigersub {
+      border-top: none;
+      padding: 0;
+    }
+
+    &-sub {
+      display: block;
+    }
+
+    &-wrap {
+      margin-top: 6rem !important;
+    }
+
+    &-day {
+      padding-bottom: 8rem;
+      padding-top: 4rem;
+    }
+
+    &-days {
+      padding-top: 6rem;
+
+      a {
+        font-size: 3.2rem;
+        transition: 0.5s;
+      }
+
+      a:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  // sp用トリガーボタン非表示
+  .trigerbtn-pc {
+    display: none !important;
+  }
+}

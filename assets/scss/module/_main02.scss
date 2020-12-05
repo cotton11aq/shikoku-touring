@@ -1,0 +1,194 @@
+.main02 {
+  color: #fff;
+  width: 100%;
+
+  &-logo {
+    position: absolute;
+    top: 58%;
+    left: 5%;
+
+    img {
+      width: 9rem;
+    }
+  }
+
+  &-text {
+    position: relative;
+    width: 100%;
+    min-width: 30rem;
+    line-height: 2.4rem;
+    text-shadow: 2px 2px 10px #000000;
+  }
+
+  &-text {
+    p:nth-child(1) {
+      position: absolute;
+      top: -3rem;
+      left: 2.5rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+
+  &-text {
+    p:nth-child(2) {
+      padding-top: 1rem;
+      font-size: 2rem;
+      span {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &-text {
+    p:nth-child(3) {
+      padding-top: 1rem;
+      font-size: 3.2rem;
+      font-weight: bold;
+
+      span {
+        font-weight: normal;
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  // スクロールボタン
+  a {
+    padding-top: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 1rem;
+    display: inline-block;
+  }
+
+  a span {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+  a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+    box-sizing: border-box;
+  }
+
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes sdb {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+// サークル
+#wrap {
+  width: 0;
+  overflow: hidden;
+  transition: 3000ms linear;
+  transition-timing-function: ease-out;
+}
+#wrap.is-show {
+  width: 100%;
+}
+// サークル終わり
+
+@include mq("sp") {
+  .main02 {
+    &-logo {
+      position: absolute;
+      top: 65%;
+      left: 5%;
+
+      img {
+        width: 12rem;
+      }
+    }
+
+    &-text {
+      position: relative;
+      width: 100%;
+      min-width: 30rem;
+      line-height: 2.4rem;
+      text-shadow: 2px 2px 10px #000000;
+    }
+
+    &-text {
+      p:nth-child(1) {
+        position: absolute;
+        top: -3rem;
+        left: 2.8rem;
+        font-size: 2.4rem;
+        font-weight: bold;
+      }
+    }
+
+    &-text {
+      p:nth-child(2) {
+        padding-top: 1rem;
+        font-size: 2.4rem;
+        span {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    &-text {
+      p:nth-child(3) {
+        padding-top: 3rem;
+        font-size: 5.6rem;
+        font-weight: normal;
+
+        span {
+          font-size: 3.2rem;
+        }
+      }
+    }
+  }
+}

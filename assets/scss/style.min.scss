@@ -1,0 +1,44 @@
+// @import "setting/name";
+@import "setting/config"; //必ず一番上に
+
+// @import "base_/name";
+@import "base/base";
+@import "base/reset";
+
+// @import "mixin/name";
+@import "mixin/mq";
+@import "mixin/position-spotsp";
+@import "mixin/position-icon";
+@import "mixin/position-spotpc";
+@import "mixin/button";
+@import "mixin/triger";
+@import "mixin/top-pic";
+@import "mixin/position-pctop";
+
+// @import "module/name";
+@import "module/header";
+@import "module/footer";
+@import "module/region";
+@import "module/main";
+@import "module/main02";
+@import "module/top";
+@import "module/pagination";
+@import "module/other";
+@import "module/fade";
+@import "module/_position/position-om";
+@import "module/_position/position-mt";
+@import "module/_position/position-tt";
+@import "module/_position/position-tk";
+@import "module/_position/position-ks";
+@import "module/_position/position-so";
+@import "module/_position/position-kk";
+@import "module/_position/position-sm";
+@import "module/_position/position-ok-ot";
+@import "module/_position/position-ok-mo";
+@import "module/_position/position-ht";
+@import "module/_position/position-mh";
+
+// @import "page/name/name";
+@import "page/spot";
+@import "page/spot02";
+@import "page/position";

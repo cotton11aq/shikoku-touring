@@ -1,0 +1,109 @@
+.position {
+  // スポットの位置
+  &-spot-ok-ot01 {
+    @include position-spotsp(57%, 22%);
+  }
+
+  &-spot-ok-ot02 {
+    @include position-spotsp(62%, 57%);
+  }
+
+  &-spot-ok-ot03 {
+    @include position-spotsp(55%, 61%);
+  }
+
+  &-spot-ok-ot04 {
+    @include position-spotsp(68%, 40%);
+  }
+
+  &-spot-ok-ot05 {
+    @include position-spotsp(71%, 79%);
+  }
+
+  &-spot-ok-ot06 {
+    @include position-spotsp(79%, 66%);
+  }
+  // スポットの位置//
+
+  // アイコンの位置
+  &-icon-ok-ot01 {
+    @include position-icon(60%, 25%, 13%);
+  }
+
+  &-icon-ok-ot02 {
+    @include position-icon(59%, 47%, 13%);
+  }
+
+  &-icon-ok-ot03 {
+    @include position-icon(55%, 51%, 13%);
+  }
+
+  &-icon-ok-ot04 {
+    @include position-icon(60%, 40%, 13%);
+  }
+
+  &-icon-ok-ot05 {
+    @include position-icon(66%, 70%, 13%);
+  }
+
+  &-icon-ok-ot06 {
+    @include position-icon(72%, 66%, 13%);
+  }
+  // アイコンの位置//
+}
+
+@include mq("sp") {
+  .position {
+    // スポットの位置
+    &-spot-ok-ot01 {
+      @include position-spotpc(24%, 66%);
+    }
+
+    &-spot-ok-ot02 {
+      @include position-spotpc(33%, 77%);
+    }
+
+    &-spot-ok-ot03 {
+      @include position-spotpc(22%, 80%);
+    }
+
+    &-spot-ok-ot04 {
+      @include position-spotpc(40%, 71%);
+    }
+
+    &-spot-ok-ot05 {
+      @include position-spotpc(42%, 87%);
+    }
+
+    &-spot-ok-ot06 {
+      @include position-spotpc(57%, 82%);
+    }
+    // スポットの位置
+
+    // アイコンの位置
+    &-icon-ok-ot01 {
+      @include position-icon(28%, 66%, 5%);
+    }
+
+    &-icon-ok-ot02 {
+      @include position-icon(25%, 73.5%, 5%);
+    }
+
+    &-icon-ok-ot03 {
+      @include position-icon(22%, 76%, 5%);
+    }
+
+    &-icon-ok-ot04 {
+      @include position-icon(29%, 71%, 5%);
+    }
+
+    &-icon-ok-ot05 {
+      @include position-icon(38%, 83%, 5%);
+    }
+
+    &-icon-ok-ot06 {
+      @include position-icon(46%, 82%, 5%);
+    }
+    // アイコンの位置//
+  }
+}

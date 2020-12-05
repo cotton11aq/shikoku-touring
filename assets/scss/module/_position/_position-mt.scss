@@ -1,0 +1,121 @@
+.position {
+  // スポットの位置
+  &-spot-mt01 {
+    @include position-spotsp(78%, 8%);
+  }
+
+  &-spot-mt02 {
+    @include position-spotsp(72%, 20%);
+  }
+
+  &-spot-mt03 {
+    @include position-spotsp(88%, 38%);
+  }
+
+  &-spot-mt04 {
+    @include position-spotsp(83%, 65%);
+  }
+
+  &-spot-mt05 {
+    @include position-spotsp(68%, 65%);
+  }
+
+  &-spot-mt06 {
+    @include position-spotsp(55%, 62%);
+  }
+
+  &-spot-mt07 {
+    @include position-spotsp(50%, 83%);
+  }
+
+  &-icon-mt01 {
+    @include position-icon(70%, 8%, 13%);
+  }
+
+  &-icon-mt02 {
+    @include position-icon(64%, 16%, 13%);
+  }
+
+  &-icon-mt03 {
+    @include position-icon(80%, 38%, 13%);
+  }
+
+  &-icon-mt04 {
+    @include position-icon(75%, 65%, 13%);
+  }
+
+  &-icon-mt05 {
+    @include position-icon(60%, 65%, 13%);
+  }
+
+  &-icon-mt06 {
+    @include position-icon(53%, 76%, 13%);
+  }
+
+  &-icon-mt07 {
+    @include position-icon(53%, 84%, 13%);
+  }
+  // スポットの位置//
+}
+
+@include mq("sp") {
+  .position {
+    // アイコンの位置
+    &-spot-mt01 {
+      @include position-spotpc(68%, 55%);
+    }
+
+    &-spot-mt02 {
+      @include position-spotpc(53%, 59%);
+    }
+
+    &-spot-mt03 {
+      @include position-spotpc(70%, 65%);
+    }
+
+    &-spot-mt04 {
+      @include position-spotpc(67%, 76%);
+    }
+
+    &-spot-mt05 {
+      @include position-spotpc(50%, 78%);
+    }
+
+    &-spot-mt06 {
+      @include position-spotpc(33%, 76%);
+    }
+
+    &-spot-mt07 {
+      @include position-spotpc(40%, 85%);
+    }
+
+    &-icon-mt01 {
+      @include position-icon(58%, 55%, 5%);
+    }
+
+    &-icon-mt02 {
+      @include position-icon(43%, 59%, 5%);
+    }
+
+    &-icon-mt03 {
+      @include position-icon(60%, 65%, 5%);
+    }
+
+    &-icon-mt04 {
+      @include position-icon(57%, 76%, 5%);
+    }
+
+    &-icon-mt05 {
+      @include position-icon(40%, 78%, 5%);
+    }
+
+    &-icon-mt06 {
+      @include position-icon(30%, 81%, 5%);
+    }
+
+    &-icon-mt07 {
+      @include position-icon(30%, 84%, 5%);
+    }
+    // アイコンの位置//
+  }
+}

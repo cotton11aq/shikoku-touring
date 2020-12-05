@@ -1,0 +1,109 @@
+.position {
+  // スポットの位置
+  &-spot-ks01 {
+    @include position-spotsp(51%, 56%);
+  }
+
+  &-spot-ks02 {
+    @include position-spotsp(56%, 73%);
+  }
+
+  &-spot-ks03 {
+    @include position-spotsp(66%, 52%);
+  }
+
+  &-spot-ks04 {
+    @include position-spotsp(64%, 25%);
+  }
+
+  &-spot-ks05 {
+    @include position-spotsp(74%, 25%);
+  }
+
+  &-spot-ks06 {
+    @include position-spotsp(86%, 26%);
+  }
+  // スポットの位置//
+
+  // アイコンの位置//
+  &-icon-ks01 {
+    @include position-icon(53%, 56%, 13%);
+  }
+
+  &-icon-ks02 {
+    @include position-icon(55%, 62%, 13%);
+  }
+
+  &-icon-ks03 {
+    @include position-icon(59%, 52%, 13%);
+  }
+
+  &-icon-ks04 {
+    @include position-icon(57%, 25%, 13%);
+  }
+
+  &-icon-ks05 {
+    @include position-icon(76%, 19%, 13%);
+  }
+
+  &-icon-ks06 {
+    @include position-icon(79%, 26%, 13%);
+  }
+  // アイコンの位置//
+}
+
+@include mq("sp") {
+  .position {
+    // スポットの位置
+    &-spot-ks01 {
+      @include position-spotpc(24%, 76%);
+    }
+
+    &-spot-ks02 {
+      @include position-spotpc(32%, 83%);
+    }
+
+    &-spot-ks03 {
+      @include position-spotpc(50%, 75%);
+    }
+
+    &-spot-ks04 {
+      @include position-spotpc(47%, 64%);
+    }
+
+    &-spot-ks05 {
+      @include position-spotpc(63%, 62%);
+    }
+
+    &-spot-ks06 {
+      @include position-spotpc(70%, 69%);
+    }
+    // スポットの位置
+
+    // アイコンの位置
+    &-icon-ks01 {
+      @include position-icon(28%, 76%, 5%);
+    }
+
+    &-icon-ks02 {
+      @include position-icon(32%, 79%, 5%);
+    }
+
+    &-icon-ks03 {
+      @include position-icon(39%, 75%, 5%);
+    }
+
+    &-icon-ks04 {
+      @include position-icon(37%, 64%, 5%);
+    }
+
+    &-icon-ks05 {
+      @include position-icon(67%, 62%, 5%);
+    }
+
+    &-icon-ks06 {
+      @include position-icon(70%, 65%, 5%);
+    }
+    // アイコンの位置//
+  }
+}

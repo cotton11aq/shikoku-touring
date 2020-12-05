@@ -1,0 +1,260 @@
+.header {
+  display: flex;
+  position: relative;
+  padding: 2rem 0 0 2rem;
+
+  &-logo {
+    width: 12rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// ハンバーガー
+#menu_icon {
+  z-index: 1000;
+}
+
+#gloval_nav {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fffff9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.open {
+  overflow: hidden;
+}
+
+.open #gloval_nav {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header_menu {
+  display: none;
+}
+#menu_icon {
+  width: 35px;
+  text-align: left;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 32px;
+  cursor: pointer;
+}
+#menu_icon div {
+  position: relative;
+  width: 36px;
+  height: 100%;
+}
+#menu_icon div span {
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background: #fff;
+  position: absolute;
+  -webkit-transition: top 0.5s ease, -webkit-transform 0.4s ease-in-out;
+  transition: top 0.5s ease, -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, top 0.5s ease;
+  transition: transform 0.4s ease-in-out, top 0.5s ease,
+    -webkit-transform 0.4s ease-in-out;
+}
+
+.isActive {
+  background-color: white !important;
+}
+
+#menu_icon div span:nth-child(1) {
+  top: 0;
+}
+#menu_icon div span:nth-child(2) {
+  top: 14px;
+}
+#menu_icon div span:nth-child(3) {
+  top: 28px;
+}
+#menu_icon div:hover span:nth-child(1) {
+  top: 4px;
+}
+#menu_icon div:hover span:nth-child(3) {
+  top: 23px;
+}
+.open #menu_icon div span:nth-child(1) {
+  top: 15px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.open #menu_icon div span:nth-child(2) {
+  top: 15px;
+  width: 0;
+  left: 50%;
+}
+.open #menu_icon div span:nth-child(3) {
+  top: 15px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.open #menu_icon div:hover span:nth-child(1) {
+  top: 15px;
+}
+.open #menu_icon div:hover span:nth-child(3) {
+  top: 15px;
+}
+
+// ハンバーガー中身スタイル
+.han {
+  background: black;
+  color: #fff;
+  padding-bottom: 20rem;
+
+  &-menu {
+    margin-top: 8rem;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  &-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 12rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-pick {
+    font-size: 1.2rem;
+  }
+
+  &-title {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+
+  &-content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 56rem;
+    line-height: 8rem;
+  }
+
+  &-name {
+    span {
+      font-size: 2.4rem;
+    }
+  }
+
+  &-region {
+    width: 100%;
+    border-collapse: collapse;
+
+    a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-img01:hover {
+    background-image: url("../img/han/pc_hun_kobe-min.png");
+  }
+
+  &-img02:hover {
+    background-image: url("../img/han/pc_hun_hiroshima-min.png");
+  }
+
+  &-img03:hover {
+    background-image: url("../img/han/pc_hun_okayama-min.png");
+  }
+
+  &-img04:hover {
+    background-image: url("../img/han/pc_hun_oita-min.png");
+  }
+
+  &-region:hover {
+    .han-imgopa {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &-text {
+    position: absolute;
+  }
+}
+
+@include mq("sp") {
+  .header {
+    padding-top: 2rem;
+    padding-left: 6rem;
+
+    &-logo {
+      width: 24rem;
+    }
+  }
+
+  #gloval_nav {
+    left: initial;
+  }
+
+  #menu_icon {
+    top: 4rem;
+    right: 4rem;
+  }
+
+  .han {
+    &-content {
+      line-height: 12rem;
+    }
+
+    &-title {
+      margin-bottom: 2rem;
+    }
+
+    &-menu {
+      margin-top: 20rem;
+    }
+
+    &-logo {
+      top: 4rem;
+    }
+
+    &-region {
+      border-top: 0.5px solid #808080;
+    }
+
+    &-img04 {
+      border-bottom: 0.5px solid #808080;
+    }
+  }
+}

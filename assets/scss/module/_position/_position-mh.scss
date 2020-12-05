@@ -1,0 +1,61 @@
+.position {
+  // スポットの位置
+  &-spot-mh01 {
+    @include position-spotsp(79%, 18%);
+  }
+
+  &-spot-mh02 {
+    @include position-spotsp(75%, 35%);
+  }
+
+  &-spot-mh03 {
+    @include position-spotsp(61%, 46%);
+  }
+  // スポットの位置//
+
+  // アイコンの位置//
+  &-icon-mh01 {
+    @include position-icon(82%, 18%, 13%);
+  }
+
+  &-icon-mh02 {
+    @include position-icon(68%, 35%, 13%);
+  }
+
+  &-icon-mh03 {
+    @include position-icon(63%, 46%, 13%);
+  }
+  // アイコンの位置//
+}
+
+@include mq("sp") {
+  .position {
+    // スポットの位置
+    &-spot-mh01 {
+      @include position-spotpc(72%, 66%);
+    }
+
+    &-spot-mh02 {
+      @include position-spotpc(60%, 71%);
+    }
+
+    &-spot-mh03 {
+      @include position-spotpc(39%, 75%);
+    }
+    // スポットの位置
+
+    // アイコンの位置
+    &-icon-mh01 {
+      @include position-icon(63%, 66%, 5%);
+    }
+
+    &-icon-mh02 {
+      @include position-icon(50%, 71%, 5%);
+    }
+
+    &-icon-mh03 {
+      @include position-icon(42%, 75%, 5%);
+    }
+    // アイコンの位置//
+  }
+}

@@ -1,0 +1,118 @@
+.position {
+  background: #fff;
+  padding-bottom: 6rem;
+
+  &-gmap {
+    padding-top: 4rem;
+  }
+
+  &-head {
+    padding: 8rem 4rem 2rem;
+
+    p {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.8rem;
+      letter-spacing: 0;
+      line-height: 3rem;
+    }
+  }
+
+  &-headpc {
+    display: none;
+  }
+
+  &-map {
+    width: 100%;
+    position: relative;
+  }
+
+  &-mapimgsp {
+    width: 100%;
+  }
+
+  &-mapimgpc {
+    display: none;
+  }
+
+  &-spot {
+    li {
+      /*デフォルトで透明度0に指定*/
+      opacity: 0;
+      transition: 2s;
+    }
+
+    /*スクロールした時に追加されるクラス*/
+    .fadein {
+      opacity: 1;
+    }
+  }
+
+  &-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+  }
+
+  &-button {
+    @include button_sp01(#f7f7f7);
+  }
+
+  &-spot a:hover {
+    opacity: 0.7;
+  }
+}
+
+@include mq("sp") {
+  .position {
+    overflow: hidden;
+    margin: 0 auto;
+
+    &-head {
+      width: 100%;
+      p {
+        font-weight: 500;
+      }
+    }
+
+    &-headsp {
+      display: none;
+    }
+
+    &-headpc {
+      display: block;
+    }
+
+    &-map {
+      overflow: hidden;
+      width: 120rem;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &-mapimgsp {
+      display: none;
+    }
+
+    &-mapimgpc {
+      padding-top: 4rem;
+      display: block;
+      width: 120rem;
+      margin: 0 auto;
+    }
+
+    &-wrap {
+      margin-top: 4rem;
+    }
+
+    &-button {
+      @include button-pc(24rem, #fff);
+    }
+
+    &-button:hover {
+      opacity: 0.5;
+    }
+  }
+}

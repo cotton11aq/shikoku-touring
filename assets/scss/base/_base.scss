@@ -1,0 +1,59 @@
+// サイト共通で設定するスタイル
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  line-height: 2.7rem;
+}
+
+H1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: YuGothic, ’Yu Gothic’, ’ヒラギノ角ゴシック’, ’Hiragino Sans’,
+    sans-serif;
+  font-size: 2.4rem;
+}
+
+p,
+a {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ",
+    Meiryo, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+// 読み込み時にふわっと表示（1ページ目のみ）
+.index {
+  -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+  animation: fadeIn 1.5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+// 読み込み時にふわっと表示（1ページ目のみ）//

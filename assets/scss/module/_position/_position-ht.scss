@@ -1,0 +1,125 @@
+.position {
+  // スポットの位置
+  &-spot-ht01 {
+    @include position-spotsp(61%, 40%);
+  }
+
+  &-spot-ht02 {
+    @include position-spotsp(75%, 33%);
+  }
+
+  &-spot-ht03 {
+    @include position-spotsp(87%, 47%);
+  }
+
+  &-spot-ht04 {
+    @include position-spotsp(85%, 69%);
+  }
+
+  &-spot-ht05 {
+    @include position-spotsp(72%, 72%);
+  }
+
+  &-spot-ht06 {
+    @include position-spotsp(57%, 67%);
+  }
+
+  &-spot-ht07 {
+    @include position-spotsp(55%, 84%);
+  }
+  // スポットの位置//
+
+  // アイコンの位置
+  &-icon-ht01 {
+    @include position-icon(63%, 40%, 13%);
+  }
+
+  &-icon-ht02 {
+    @include position-icon(68%, 33%, 13%);
+  }
+
+  &-icon-ht03 {
+    @include position-icon(80%, 42%, 13%);
+  }
+
+  &-icon-ht04 {
+    @include position-icon(78%, 69%, 13%);
+  }
+
+  &-icon-ht05 {
+    @include position-icon(65%, 72%, 13%);
+  }
+
+  &-icon-ht06 {
+    @include position-icon(59%, 77%, 13%);
+  }
+
+  &-icon-ht07 {
+    @include position-icon(58%, 84%, 13%);
+  }
+  // アイコンの位置//
+}
+
+@include mq("sp") {
+  .position {
+    // スポットの位置
+    &-spot-ht01 {
+      @include position-spotpc(37%, 67%);
+    }
+
+    &-spot-ht02 {
+      @include position-spotpc(57%, 63%);
+    }
+
+    &-spot-ht03 {
+      @include position-spotpc(66%, 68%);
+    }
+
+    &-spot-ht04 {
+      @include position-spotpc(75%, 80%);
+    }
+
+    &-spot-ht05 {
+      @include position-spotpc(58%, 81%);
+    }
+
+    &-spot-ht06 {
+      @include position-spotpc(35%, 82%);
+    }
+
+    &-spot-ht07 {
+      @include position-spotpc(33%, 89%);
+    }
+    // スポットの位置
+
+    // アイコンの位置
+    &-icon-ht01 {
+      @include position-icon(40%, 67%, 5%);
+    }
+
+    &-icon-ht02 {
+      @include position-icon(47%, 63%, 5%);
+    }
+
+    &-icon-ht03 {
+      @include position-icon(69%, 68%, 5%);
+    }
+
+    &-icon-ht04 {
+      @include position-icon(66%, 80%, 5%);
+    }
+
+    &-icon-ht05 {
+      @include position-icon(49%, 81%, 5%);
+    }
+
+    &-icon-ht06 {
+      @include position-icon(37%, 85%, 5%);
+    }
+
+    &-icon-ht07 {
+      @include position-icon(36%, 88%, 5%);
+    }
+    // アイコンの位置//
+  }
+}

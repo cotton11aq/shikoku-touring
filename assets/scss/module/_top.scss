@@ -1,0 +1,113 @@
+.top {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-slide {
+    .parallax1,
+    .parallax2 {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      z-index: -1;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &::before {
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.1);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      content: " ";
+      z-index: -1;
+    }
+  }
+
+  &-slide-pc {
+    display: none;
+  }
+}
+
+@include mq("sp") {
+  .top {
+    &-slidesp {
+      display: none;
+    }
+
+    // pcトップ（1ページ目）//
+    &-slidepc {
+      display: inline;
+      position: absolute;
+      top: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-attachment: fixed;
+    }
+    // pcトップ（1ページ目）//
+
+    // pcトップ（2ページ目以降）
+    &-om {
+      @include position-pctop("/assets/img/top/pc/sadamisaki-min.jpg");
+    }
+
+    &-mt {
+      @include position-pctop("/assets/img/top/pc/riturin-min.jpg");
+    }
+
+    &-tt {
+      @include position-pctop("/assets/img/top/pc/naruto-min.jpg");
+    }
+
+    &-tk {
+      @include position-pctop("/assets/img/top/pc/murotomisaki-min.jpg");
+    }
+
+    &-ks {
+      @include position-pctop("/assets/img/top/pc/karusuto-min.jpg");
+    }
+
+    &-so {
+      @include position-pctop("/assets/img/top/pc/ashizurimisaki-min.jpg");
+    }
+
+    &-mo {
+      @include position-pctop("/assets/img/top/pc/kazurabashi-min.jpg");
+    }
+
+    &-mh {
+      @include position-pctop("/assets/img/top/pc/shimanami-min.jpg");
+    }
+    // 2pcトップ（2ページ目以降）//
+  }
+
+  // 2ページ目以降
+  .top-01::before,
+  .top-02::before,
+  .top-03::before,
+  .top-04::before,
+  .top-05::before,
+  .top-06::before {
+    background-attachment: fixed;
+    background-position: 0 0;
+  }
+}

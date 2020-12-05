@@ -1,0 +1,8 @@
+@mixin position-icon($top, $left, $width) {
+  img {
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+  }
+}

@@ -1,0 +1,37 @@
+@mixin triger01 {
+  border-top: 1px solid #000;
+  padding-top: 2rem;
+  margin-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+@mixin triger02 {
+  border-top: 1px solid #000;
+  padding-top: 2rem;
+  margin-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.triger01,
+.triger03,
+.triger05,
+.triger07 {
+  @include triger01;
+}
+
+.triger02,
+.triger04,
+.triger06 {
+  @include triger02;
+}
+
+@include mq("sp") {
+  .triger02,
+  .triger04,
+  .triger06 {
+    margin-left: 0;
+    margin-right: 15%;
+  }
+}

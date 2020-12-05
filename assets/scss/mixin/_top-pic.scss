@@ -1,0 +1,12 @@
+@mixin top-picsp($url, $position) {
+  content: "";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background-image: url($url);
+  background-position: $position;
+}

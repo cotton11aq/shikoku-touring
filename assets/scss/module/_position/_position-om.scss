@@ -1,0 +1,121 @@
+.position {
+  // スポットの位置
+  &-spot-om01 {
+    @include position-spotsp(85%, 20%);
+  }
+
+  &-spot-om02 {
+    @include position-spotsp(66%, 26%);
+  }
+
+  &-spot-om03 {
+    @include position-spotsp(73%, 45%);
+  }
+
+  &-spot-om04 {
+    @include position-spotsp(65%, 65%);
+  }
+
+  &-spot-om05 {
+    @include position-spotsp(43%, 75%);
+  }
+
+  &-spot-om06 {
+    @include position-spotsp(55%, 72%);
+  }
+
+  &-spot-om07 {
+    @include position-spotsp(45%, 72%);
+  }
+
+  &-icon-om01 {
+    @include position-icon(76%, 18%, 13%);
+  }
+
+  &-icon-om02 {
+    @include position-icon(69%, 31%, 13%);
+  }
+
+  &-icon-om03 {
+    @include position-icon(65%, 42%, 13%);
+  }
+
+  &-icon-om04 {
+    @include position-icon(57%, 60%, 13%);
+  }
+
+  &-icon-om05 {
+    @include position-icon(45%, 78%, 13%);
+  }
+
+  &-icon-om06 {
+    @include position-icon(47%, 71%, 13%);
+  }
+
+  &-icon-om07 {
+    @include position-icon(38%, 80%, 13%);
+  }
+  // スポットの位置//
+}
+
+@include mq("sp") {
+  .position {
+    // アイコンの位置
+    &-spot-om01 {
+      @include position-spotpc(76%, 67%);
+    }
+
+    &-spot-om02 {
+      @include position-spotpc(54%, 70%);
+    }
+
+    &-spot-om03 {
+      @include position-spotpc(55%, 80%);
+    }
+
+    &-spot-om04 {
+      @include position-spotpc(40%, 90%);
+    }
+
+    &-spot-om05 {
+      @include position-spotpc(4%, 91%);
+    }
+
+    &-spot-om06 {
+      @include position-spotpc(22%, 92%);
+    }
+
+    &-spot-om07 {
+      @include position-spotpc(20%, 98%);
+    }
+
+    &-icon-om01 {
+      @include position-icon(62%, 69%, 5%);
+    }
+
+    &-icon-om02 {
+      @include position-icon(50%, 74%, 5%);
+    }
+
+    &-icon-om03 {
+      @include position-icon(43%, 79%, 5%);
+    }
+
+    &-icon-om04 {
+      @include position-icon(27%, 88%, 5%);
+    }
+
+    &-icon-om05 {
+      @include position-icon(8%, 95%, 5%);
+    }
+
+    &-icon-om06 {
+      @include position-icon(10%, 92%, 5%);
+    }
+
+    &-icon-om07 {
+      @include position-icon(10%, 97%, 5%);
+    }
+    // スポットの位置//
+  }
+}

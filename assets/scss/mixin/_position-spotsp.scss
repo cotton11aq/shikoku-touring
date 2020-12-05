@@ -1,0 +1,16 @@
+@mixin position-spotsp($top, $left) {
+  a {
+    position: absolute;
+    display: inline-block;
+    top: $top;
+    left: $left;
+    line-height: 2;
+    padding: 0rem 0.8rem;
+    font-size: 2.1vw;
+    font-weight: bold;
+    background: #fff;
+    border: 1px solid #288fe1;
+    border-radius: 4rem;
+    transition: opacity 0.2s;
+  }
+}

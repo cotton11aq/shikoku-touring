@@ -10,8 +10,16 @@
 
 ## 使用技術
 
-*HTML
-*CSS(CSCC)
-*JavaScript
-*AWS
- 
+* HTML
+* CSS(CSCC)
+* JavaScript
+* AWS
+ * Amazon Route 53
+ * Amazon CloudFront
+ * S3
+ * AWS Certificate Manager
+
+## 機能一覧
+
+* ツイッターシェア機能
+
